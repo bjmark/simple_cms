@@ -1,4 +1,7 @@
 SimpleCms::Application.routes.draw do
+  resources :posts
+  resources :sessions
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

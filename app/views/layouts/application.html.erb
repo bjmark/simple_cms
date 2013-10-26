@@ -7,7 +7,16 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+  <%= link_to 'Home', posts_path %>
+  |
+  <%= link_to 'Switch to admin', sessions_path(:role => 'admin'), confirm: 'Switch to admin ?', :method => :post %>
+  |
+  <%= link_to 'Switch to member', sessions_path(:role => 'member'), confirm: 'Switch to member ?', :method => :post %>
+  |
+  <%= link_to 'Switch to not_member', sessions_path(:role => 'not_member'), confirm: 'Switch to not_member ?', :method => :post %>
+  |
+  current_user role is <%= current_user.role %>
+  <hr>
 <%= yield %>
 
 </body>

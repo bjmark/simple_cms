@@ -1,17 +1,7 @@
 #rails generate rspec:install
-#rails g model note
-#rails g model tag, it is a mistake
-#rails g model category
-#rails g model categories_2_notes
+#rails generate scaffold Post title:string description:text member_only:string
+#rails g controller sessions
+
 #rake db:schema:dump
-#RAILS_ENV=test rake db:schema:load
-#rails g integration_test search
-#rails g controller notes 
+RAILS_ENV=test rake db:schema:load
 
-#rails g model search
-#rails g model operation
-#rails g controller operations 
-
-#rails g migration add_path_to_search 
-#rails g model content_index
-#rails g model background_job
